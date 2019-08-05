@@ -6,8 +6,7 @@
 int Snake::score = 0;
 
 Snake::Snake()
-	: dir{ STOP }, lost{ false }, changedDir{ false } {
-	head = std::make_shared<Cell>(SNAKE, Game::totalDim / 2, Game::totalDim / 2);
+	: dir{ STOP }, lost{ false }, changedDir{ false }, head {std::make_shared<Cell>(SNAKE, Game::totalDim / 2, Game::totalDim / 2)} {
 	snakeBody.emplace_back(head);
 }
 

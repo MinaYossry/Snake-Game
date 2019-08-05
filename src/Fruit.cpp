@@ -1,8 +1,8 @@
 #include "Fruit.h"
 #include "Game.h"
 
-Fruit::Fruit() {
-	fruit = std::make_shared<Cell>(FOOD);
+Fruit::Fruit()
+	: fruit {std::make_shared<Cell>(FOOD)}{
 	generatePos();
 }
 
